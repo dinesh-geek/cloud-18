@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>ON CLOUD HOME PAGE | ON CLOUD18</title>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      flag = true;
+      function openSideNav() {
+        document.getElementById("sidenav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("sidenav").style.transform = "translateX(0)";
+      }
+      function closeSideNav() {
+        document.getElementById("sidenav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("sidenav").style.transform =
+          "translateX(-100%)";
+      }
+      function OpenChatNav() {
+        if (flag == true) {
+          document.getElementById("chatnav").style.transition =
+            "transform 400ms ease-in-out";
+          document.getElementById("chatnav").style.transform = "translateX(0%)";
+          flag = !flag;
+        } else {
+          document.getElementById("chatnav").style.transition =
+            "transform 400ms ease-in-out";
+          document.getElementById("chatnav").style.transform =
+            "translateX(100%)";
+          flag = !flag;
+        }
+      }
+      function closeChatNav() {
+        document.getElementById("chatnav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("chatnav").style.transform = "translateX(100%)";
+      }
+      document.ondblclick = function () {
+        document.getElementById("chatnav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("chatnav").style.transform = "translateX(100%)";
+      };
+    </script>
+    <nav class="navbar">
+      <i class="fa fa-bars hamburger" onclick="openSideNav()"></i>
+      <ul class="navlinks-left">
+        <li><a href="./index.html" id="current_link">Home</a></li>
+        <li><a href="./faq.html">Faq</a></li>
+        <li><a href="./services.html">Services</a></li>
+      </ul>
+      <div class="navbar-brand">ONCLOUD18</div>
+      <ul class="navlinks-right">
+        <li>
+          <a href="./contact-us.html"
+            ><i class="fa fa-phone-alt"></i>&nbsp;Contact Us</a
+          >
+        </li>
+        <li>
+          <a href=""><i class="fa fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="sidenav" id="sidenav">
+      <i
+        class="fa fa-times-circle close fa-2x"
+        id="close"
+        onclick="closeSideNav()"
+      ></i>
+      <ul class="sidenavlinks-left">
+        <li><a href="./index.html" id="current_link">Home</a></li>
+        <li><a href="./faq.html">Faq</a></li>
+        <li><a href="./services.html">Services</a></li>
+      </ul>
+      <ul class="sidenavlinks-right">
+        <li>
+          <a
+            href=""
+            style="
+              border: 2px solid rgb(121, 117, 117);
+              padding: 18px 22px;
+              border-radius: 50%;
+              cursor: pointer;
+            "
+          >
+            <i class="fa fa-user"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./contact-us.html"
+            ><i class="fa fa-phone-alt"></i>&nbsp;Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header id="home_header">
+      <div class="overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+        class="home_video"
+      >
+        <source
+          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1
+              class="display-3 header_text1"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              PROFESSION TECHNOLOGY ASSISTANCE
+            </h1>
+            <p
+              class="lead mb-0 header_text2"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              WE MAKE TECHNOLOGY ACCESSIBLE !
+            </p>
+            <a href="" class="btn btn-secondary header_button"
+              >REMOTE SERVICES &nbsp; <i class="fa fa-laptop-house"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="chat" onclick="OpenChatNav()">
+      <i class="fa fa-comment-alt fa-2x"></i>
+    </div>
+    <div class="chatnav" id="chatnav">
+      <i
+        class="fa fa-times fa-3x close"
+        onclick="closeChatNav()"
+        style="cursor: pointer; color: white;"
+      ></i>
+      <h1>For any query , we are here for you !</h1>
+      <form action="" class="form-group">
+        <div class="form-group">
+          <label for="name">Enter Your Name</label>
+          <input type="text" name="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="email">Enter Your Email</label>
+          <input type="text" name="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="query">Your response here !</label>
+          <textarea
+            name="query"
+            id="query"
+            cols="30"
+            rows="5"
+            placeholder="query"
+            class="form-control"
+          ></textarea>
+        </div>
+        <button class="btn btn-dark btn-block">SUBMIT</button>
+      </form>
+      <div class="other_tools">
+        <h4>Or go with this ,</h4>
+        <a href="https://api.whatsapp.com/send?phone=917304884552"><i class="fab fa-whatsapp fa-3x"></i></a>
+      </div>
+    </div>
+    <div class="first">
+      <i class="fa fa-arrow-circle-down fa-3x"></i>
+      <h2 data-aos="fade-up" data-aos-duration="2000">ABOUT US</h2>
+      <hr />
+      <div class="row">
+        <div class="col-lg-4">
+          <h1 data-aos="fade-down" data-aos-duration="2000">
+            Technical Experience
+          </h1>
+          <p data-aos="fade-down" data-aos-duration="2000">
+            We are well-versed in a variety of operating systems, networks, and
+            databases. We work with just about any technology that a small
+            business would encounter. We use this expertise to help customers
+            with small to mid-sized projects.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h1 data-aos="fade-down" data-aos-duration="2000">High ROI</h1>
+          <p data-aos="fade-down" data-aos-duration="2000">
+            Do you spend most of your IT budget on maintaining your current
+            system? Many companies find that constant maintenance eats into
+            their budget for new technology. By outsourcing your IT management
+            to us, you can focus on what you do best--running your business.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h1 data-aos="fade-down" data-aos-duration="2000">
+            Satisfaction Guaranteed
+          </h1>
+          <p data-aos="fade-down" data-aos-duration="2000">
+            The world of technology can be fast-paced and scary. That's why our
+            goal is to provide an experience that is tailored to your company's
+            needs. No matter the budget, we pride ourselves on providing
+            professional customer service. We guarantee you will be satisfied
+            with our work.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <h3>Oncloud18</h3>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p>Copyright © 2020 Oncloud18 - All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 left">
+             <span style="font-style: italic;">mail us at <br></span>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aithani.503@gmail.com" style="color: white;">aithani.503@gmail.com</a> 
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("current_link").style.borderBottom =
+        "2px solid white";
+    </script>
+  </body>
+</html>

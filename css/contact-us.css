@@ -1,0 +1,59 @@
+@import "../navbar/navbar.css";
+
+@import "footer.css";
+body{
+background-color: black;
+color: white;
+}
+.first{
+	position: relative;
+	top: 10vh;
+width: 85%;
+margin: 0 auto;
+padding-top: 40px;
+}
+.first hr{
+height: 1px;
+background-color: white;
+}
+.first .details{
+width: 70%;
+margin: 50px auto;
+}		
+.first .details p{
+	font-size: 20px;
+	text-align: center;
+}
+.first .details h3{
+	margin: 30px auto;
+	text-align: center;
+}
+.first .details table{
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.first .details table .day{
+	padding-right: 10px;
+}
+.first .details table th{
+	width: fit-content; 
+}
+footer{
+	height: 40vh;
+	margin-top: 20vh;
+}
+@media only screen and (max-width: 500px){
+	.first h1{
+		font-size: 2rem;
+	}
+	.first .details p{
+	font-size: 17px;
+}
+.first .details table .day{
+	padding-right: 5px;
+}
+.first .details{
+width: 90%;
+margin: 50px auto;
+}	
+}

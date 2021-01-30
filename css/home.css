@@ -1,0 +1,168 @@
+@import "../navbar/navbar.css";
+@import "footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*{
+	font-family: 'Montserrat';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+header {
+    position: fixed;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    top: 10vh;
+}
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .header_button{
+      border: none !important;
+      padding: 10px 20px;
+      margin: 20px 0px;
+      background-color: black;
+    
+  }
+  .header_button:hover{
+      background-color: black;
+
+  }
+  .header_button:active{
+      
+      background-color: black !important;
+
+  }
+
+
+
+
+/* ***about**** */
+
+.first {
+    width: 100%;
+    top:85vh;
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: fit-content;
+}
+.first >i{
+    margin:30px auto;
+    text-align: center;
+    width: 100%;
+  
+}
+.first h2{
+    padding-top: 20px;
+    text-align: center;
+}
+.first hr{
+    width: 170px;
+    height: 3px;
+    background-color:white;
+}
+
+.first .row {
+    width: 100%;
+    padding: 20px;
+    padding-top: 20vh;
+}   
+ .first .row .col-lg-4 {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+} 
+
+.first p{
+    color:rgb(145, 145, 145);
+}
+
+.first h1{
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #E2E2E2;
+}
+  
+footer{
+    margin-top:20vh
+}
+@media only screen and (max-width: 500px){
+ header {
+    
+     object-fit: fill;
+    height: 70vh;
+}
+.col-lg-4 {
+    font-size: 16px;
+} 
+
+.header_text1{
+    font-size: 2rem;
+}
+.header_text2{
+    margin: 40px 0px;
+}
+
+  .header_button{
+      border: none !important;
+      padding: 10px 20px;
+      margin: 40px 0px;
+      background-color: black;
+    
+  }
+
+.first {
+    width: 100%;
+    top:78vh;
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: fit-content;
+}
+
+.first .row {
+    margin:auto;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20vh;
+}   
+
+
+
+}

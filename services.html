@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONCLOUD18 SERVICES | OUR MOST IMPORTANT TASKS</title>
+    <link rel="stylesheet" href="css/services.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+    <script>
+      flag=true;
+      function openSideNav() {
+        document.getElementById("sidenav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("sidenav").style.transform = "translateX(0)";
+      }
+      function closeSideNav() {
+        document.getElementById("sidenav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("sidenav").style.transform =
+          "translateX(-100%)";
+      }
+      function OpenChatNav() {
+        if (flag == true) {
+          document.getElementById("chatnav").style.transition =
+            "transform 400ms ease-in-out";
+          document.getElementById("chatnav").style.transform = "translateX(0%)";
+          flag = !flag;
+        } else {
+          document.getElementById("chatnav").style.transition =
+            "transform 400ms ease-in-out";
+          document.getElementById("chatnav").style.transform =
+            "translateX(100%)";
+          flag = !flag;
+        }
+      }
+      function closeChatNav() {
+        document.getElementById("chatnav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("chatnav").style.transform = "translateX(100%)";
+      }
+      document.ondblclick = function () {
+        document.getElementById("chatnav").style.transition =
+          "transform 400ms ease-in-out";
+        document.getElementById("chatnav").style.transform = "translateX(100%)";
+      };
+    </script>
+    <nav class="navbar">
+      <i class="fa fa-bars hamburger" onclick="openSideNav()"></i>
+      <ul class="navlinks-left">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./faq.html">Faq</a></li>
+        <li><a href="./services.html" id="current_link">Services</a></li>
+      </ul>
+      <div class="navbar-brand">ONCLOUD18</div>
+      <ul class="navlinks-right">
+        <li>
+          <a href="./contact-us.html"
+            ><i class="fa fa-phone-alt"></i>&nbsp;Contact Us</a
+          >
+        </li>
+        <li>
+          <a href=""><i class="fa fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="sidenav" id="sidenav">
+      <i
+        class="fa fa-times-circle close fa-2x"
+        id="close"
+        onclick="closeSideNav()"
+      ></i>
+      <ul class="sidenavlinks-left">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./faq.html">Faq</a></li>
+        <li><a href="./services.html" id="current_link">Services</a></li>
+      </ul>
+      <ul class="sidenavlinks-right">
+        <li>
+          <a
+            href=""
+            style="
+              border: 2px solid rgb(121, 117, 117);
+              padding: 18px 22px;
+              border-radius: 50%;
+              cursor: pointer;
+            "
+          >
+            <i class="fa fa-user"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./contact-us.html"
+            ><i class="fa fa-phone-alt"></i>&nbsp;Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="chat" onclick="OpenChatNav()">
+      <i class="fa fa-comment-alt fa-2x"></i>
+    </div>
+    <div class="chatnav" id="chatnav">
+      <i
+        class="fa fa-times fa-3x close"
+        onclick="closeChatNav()"
+        style="cursor: pointer; color: white;"
+      ></i>
+      <h1>For any query , we are here for you !</h1>
+      <form action="" class="form-group">
+        <div class="form-group">
+          <label for="name">Enter Your Name</label>
+          <input type="text" name="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="email">Enter Your Email</label>
+          <input type="text" name="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="query">Your response here !</label>
+          <textarea
+            name="query"
+            id="query"
+            cols="30"
+            rows="5"
+            placeholder="query"
+            class="form-control"
+          ></textarea>
+        </div>
+        <button class="btn btn-dark btn-block">SUBMIT</button>
+      </form>
+      <div class="other_tools">
+        <h4>Or go with this ,</h4>
+        <a href="https://api.whatsapp.com/send?phone=917304884552"><i class="fab fa-whatsapp fa-3x"></i></a>
+      </div>
+    </div>
+    <div class="services-block">
+      <div class="service" data-aos="fade-down">
+        <div class="service_name">
+          Detail your services
+        </div>
+        <div class="service_img">
+          <img
+            src="https://images.unsplash.com/photo-1542744174-7c97c32b00b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="service_text">
+          if customers can't find it, it does not exist. Clearly list and
+          describe the services you offer .Also may be sure to showcase a
+          premium service .
+        </div>
+      </div>
+      <div class="service" data-aos="fade-down">
+        <div class="service_name">
+          Announcing coming events
+        </div>
+        <div class="service_img">
+          <img
+            src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="service_text">
+          Having a big sale, on-site celebrity, or other event ? Be sure to
+          announce it so everybody knows and gets exited about it .
+        </div>
+      </div>
+      <div class="service" data-aos="fade-down">
+        <div class="service_name">
+          Display real testimonials
+        </div>
+        <div class="service_img">
+          <img
+            src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="service_text">
+          Are you sure customers raving about you on social media ? Share their
+          great stories to help turn potential customers into loyal ones .
+        </div>
+      </div>
+      <div class="service" data-aos="fade-down">
+        <div class="service_name">
+          Promote current deals .
+        </div>
+        <div class="service_img">
+          <img
+            src="https://images.unsplash.com/flagged/photo-1581390476438-ba9406fbf70c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="service_text">
+          Running a holiday sale or weekly special ? Definitely promote
+          customers about getting a sweet deal .
+        </div>
+      </div>
+      <div class="service" data-aos="fade-down">
+        <div class="service_name">
+          Share the big news .
+        </div>
+        <div class="service_img">
+          <img
+            src="https://images.unsplash.com/flagged/photo-1556514767-5c270b96a005?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="service_text">
+          Have you opened a new location , redesiged your shop, or added a new
+          product or service ? Don't keep it to yourself , let folks know
+        </div>
+      </div>
+      <div class="service" data-aos="fade-down">
+        <div class="service_name">
+          Display their FAQ's
+        </div>
+        <div class="service_img">
+          <img
+            src="https://images.unsplash.com/photo-1593697724191-f148e1bcd3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="service_text">
+          Customers have questions , you have answers. Display the most
+          frequently asked question so everybody benefited.
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews_container">
+      <div class="review_block">
+        <div class="reviews_header">
+          Our Reviews
+        </div>
+        <div class="review" data-aos="flip-right">
+          <i
+            class="fab fa-facebook-square fa-4x"
+            style="
+              color: #3b4998;
+              background-color: white;
+              padding: 20px;
+              border-radius: 10px;
+              cursor: pointer;
+            "
+          ></i>
+          <p class="review_text">Reviews are coming</p>
+        </div>
+      </div>
+      <footer>
+        <h3>Oncloud18</h3>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p>Copyright © 2020 Oncloud18 - All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 left">
+             <span style="font-style: italic;">mail us at <br></span>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aithani.503@gmail.com" style="color: white;">aithani.503@gmail.com</a> 
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("current_link").style.borderBottom =
+        "2px solid white";
+    </script>
+  </body>
+</html>
